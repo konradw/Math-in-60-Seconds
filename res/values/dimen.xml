@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="mainmenu_title">40px</dimen>
+    <dimen name="mainmenu_labels">70px</dimen>
+    <dimen name="game_text">60px</dimen>
+    
+</resources>

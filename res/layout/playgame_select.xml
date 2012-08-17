@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/whiteboard" 
+    android:paddingTop="10dp">
+
+    <TextView
+        android:id="@+id/select_math"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal|center"
+        android:text="@string/select_math"
+        android:textColor="@color/orange" 
+        android:textSize="@dimen/mainmenu_title"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/diffMed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textColor="@color/green"
+            android:textSize="@dimen/mainmenu_title"
+            android:text="@string/medium" 
+            android:clickable="true"
+            android:onClick="onMed"/>
+
+        <TextView
+            android:id="@+id/diffEasy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="25dp"
+            android:gravity="center"
+            android:text="@string/easy"
+            android:textColor="@color/green"
+            android:textSize="@dimen/mainmenu_title" 
+            android:clickable="true"
+            android:onClick="onEasy"/>
+
+        <TextView
+            android:id="@+id/diffHard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@+id/diffMed"
+            android:gravity="center"
+            android:text="@string/hard"
+           android:textColor="@color/green"
+            android:textSize="@dimen/mainmenu_title" 
+            android:clickable="true"
+            android:onClick="onHard"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/plus"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.97"
+            android:src="@drawable/plus" 
+            android:clickable="true"
+            android:onClick="onPlus"/>
+
+        <ImageView
+            android:id="@+id/minus"
+            android:layout_width="155dp"
+            android:layout_height="235dp"
+            android:src="@drawable/minus"
+            android:clickable="true"
+            android:onClick="onMinus" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/times"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/times"
+            android:clickable="true"
+            android:onClick="onTimes" />
+
+        <ImageView
+            android:id="@+id/divide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/divide"
+            android:clickable="true"
+            android:onClick="onDivide" />
+
+    </LinearLayout>
+
+</LinearLayout>

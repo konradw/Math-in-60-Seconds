@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/whiteboard"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/countdown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="@dimen/game_text" 
+        android:textColor="@color/green"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/num1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_horizontal"
+            android:textSize="@dimen/game_text" 
+            android:textColor="@color/green"/>
+
+        <TextView
+            android:id="@+id/num2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:gravity="right"
+            android:textSize="@dimen/game_text"
+            android:textColor="@color/green" />
+
+        <TextView
+            android:id="@+id/math"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/game_text"
+            android:textColor="@color/green" />
+    </RelativeLayout>
+    
+     <TextView
+         android:id="@+id/display"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="10dp"
+         android:layout_marginTop="10dp"
+         android:textSize="@dimen/game_text"
+          android:gravity="right"
+          android:textColor="@color/orange"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/number1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1" 
+            android:textSize="@dimen/game_text" 
+            android:clickable="true"
+            android:onClick="onOne" android:layout_marginRight="8dp"
+            android:textColor="@color/red"/>
+
+        <TextView
+            android:id="@+id/number2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/number1"
+            android:text="2"
+            android:textSize="@dimen/game_text" 
+            android:clickable="true"
+            android:onClick="onTwo" 
+            android:layout_marginRight="8dp"
+            android:textColor="@color/red" />
+
+        <TextView
+            android:id="@+id/number3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="3"
+             android:layout_toRightOf="@id/number2"
+             android:textSize="@dimen/game_text"
+             android:clickable="true"
+            android:onClick="onThree"
+            android:layout_marginRight="8dp"  
+            android:textColor="@color/red"/>
+
+        <TextView
+            android:id="@+id/number4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="4" android:layout_toRightOf="@id/number3"
+            android:textSize="@dimen/game_text" 
+            android:clickable="true"
+            android:onClick="onFour"
+            android:layout_marginRight="8dp" 
+            android:textColor="@color/red"/>
+
+        <TextView
+            android:id="@+id/number5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/number4"
+            android:text="5" 
+            android:textSize="@dimen/game_text" 
+            android:clickable="true"
+            android:onClick="onFive"
+            android:layout_marginRight="8dp" 
+            android:textColor="@color/red"/>
+
+        <TextView
+            android:id="@+id/number6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/number5"
+            android:text="6" 
+            android:textSize="@dimen/game_text" 
+            android:clickable="true"
+            android:onClick="onSix" 
+            android:layout_marginRight="8dp"
+            android:textColor="@color/red"/>
+
+        <TextView
+            android:id="@+id/number7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="7" android:layout_toRightOf="@id/number6"
+            android:textSize="@dimen/game_text" 
+            android:clickable="true"
+            android:onClick="onSeven" 
+            android:layout_marginRight="8dp"
+            android:textColor="@color/red"/>
+
+        <TextView
+            android:id="@+id/number8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/number7"
+            android:text="8"
+            android:textSize="@dimen/game_text"
+            android:clickable="true"
+            android:onClick="onEight"  
+            android:layout_marginRight="8dp" 
+            android:textColor="@color/red"/>
+
+        <TextView
+            android:id="@+id/number9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/number8"
+            android:text="9" 
+            android:textSize="@dimen/game_text"
+            android:clickable="true"
+            android:onClick="onNine" 
+            android:layout_marginRight="8dp" 
+            android:textColor="@color/red"/>
+
+        <TextView
+            android:id="@+id/number0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="0" android:layout_toRightOf="@id/number9"
+            android:textSize="@dimen/game_text"
+            android:clickable="true"
+            android:onClick="onZero" 
+            android:layout_marginRight="8dp"
+            android:textColor="@color/red"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:onClick="onSubmit"
+        android:text="Submit"
+        android:textSize="@dimen/game_text"
+        android:textColor="@color/blue" />
+    <TextView
+        android:id="@+id/clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:onClick="onClear"
+        android:text="Clear"
+        android:textSize="@dimen/game_text"
+        android:textColor="@color/blue" />
+
+</LinearLayout>
